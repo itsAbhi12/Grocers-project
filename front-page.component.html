@@ -1,0 +1,281 @@
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Grocers</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+          <div class="navbar-right">
+        <ul class="nav navbar-nav  ml-auto mr-lg-5">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <button class="btn-primary btn navbar-btn  rounded-pill px-1 ml-lg-4" href="#"  data-toggle="modal" data-target="#popUpWindow">Buy Now</button>
+    </div>   
+      </div>
+    </div>
+</nav>
+  
+<div class="container-fluid bg-1 text-center"  >
+                  <h1 class="header">Welcome to Grocers</h1>
+                    <p>
+                      Video provides a powerful way to help you prove your point.
+                    </p>
+                          <div class="row">
+                              <div class="col-lg-4 col-lg-offset-4">
+                                  <div class="input-group">
+                                      <input type="text" class="form-control search-bar"/> 
+                                      <span class="input-group-btn">
+                                          <button class="btn bg-green btn-teal rounded-pill" type="submit">Search</button>
+                                      </span>
+                                  </div><!-- /input-group -->
+                              </div><!-- /.col-lg-4 -->
+                          </div>
+                          <p class="page-header-text small mb-0">By signing up, you agree to our <a class="terms-1" href="javascript:void(0);">terms of service</a></p>
+</div>
+  
+ <svg class ="img-responsive" style="width:100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0061f2" fill-opacity="1" d="M0,224L102.9,96L205.7,256L308.6,288L411.4,224L514.3,224L617.1,192L720,128L822.9,224L925.7,192L1028.6,64L1131.4,256L1234.3,288L1337.1,256L1440,128L1440,0L1337.1,0L1234.3,0L1131.4,0L1028.6,0L925.7,0L822.9,0L720,0L617.1,0L514.3,0L411.4,0L308.6,0L205.7,0L102.9,0L0,0Z"></path></svg>
+ 
+
+
+
+
+
+<div class="container-fluid text-center bg-2">
+                  <div class="row text-center">
+                      <div class="col-sm-4">
+                        <div class="thumbnail">
+                          <img src="assets/imgs/egg.jpg" class ="img-responsive"  alt="eggs" width="300" height="150">
+                          <p><strong>Eggs</strong></p>
+                          <p><strong>Price:60 Rss(per dozen)</strong></p>
+                      </div>
+                    </div>
+                      <div class="col-sm-4">
+                        <div class="thumbnail">
+                        <img src="assets/imgs/mobile-banner.jpg" class ="img-responsive"  alt="flour" width="300" height="150">
+                        <p><strong>Ashirbaad Atta</strong></p>
+                        <p><strong>Price:175 Rs</strong></p>
+                      </div>
+                    </div>
+                      <div class="col-sm-4">
+                        <div class="thumbnail">
+                        <img src="assets/imgs/Cold-drinks-200ml.jpg" class ="img-responsive" alt="drinks" width="300" height="150">
+                        <p><strong>cold drinks</strong></p>
+                        <p><strong>Price:13 Rs</strong></p>
+                       </div>
+                      </div>
+                    </div>
+                
+                    <div class="row text-center">
+                      <div class="col-sm-4">
+                        <div class="thumbnail">
+                          <img src="assets/imgs/spices.jpg" class ="img-responsive"  alt="spices" width="300" height="80">
+                          <p><strong>All types of Spices</strong></p>
+                          <p><strong>Price:10-100 Rs</strong></p>
+                          <p>Per 100gm</p>
+                      </div>
+                    </div>
+                      <div class="col-sm-4">
+                        <div class="thumbnail">
+                        <img src="assets/imgs/rice.jpg" class ="img-responsive"  alt="rice" width="300" height="150">
+                        <p><strong>All types of Rice</strong></p>
+                        <p><strong>Price:40-100 Rs</strong></p>
+                        <p>Per 1kg</p>
+                      </div>
+                    </div>
+                      <div class="col-sm-4">
+                        <div class="thumbnail">
+                        <img src="assets/imgs/2009048_soaps-shower-gels_378.jpg" class ="img-responsive" alt="soap_beauty" width="300" height="150">
+                        <p><strong>Soaps & Powders </strong></p>
+                        <p><strong>Price:30-50 Rs</strong></p>
+                        <p>Per 1kg</p>
+                       </div>
+                      </div>
+                    </div>
+</div>
+
+<div class="container" id="modal3" tabindex="-1">
+   <div class="modal fade" id="popUpWindow" role="dialog" aria-hidden="true">
+     <div class="modal-dialog">
+      <div class="modal-content">
+
+
+  <ul class="nav nav-tabs nav-justified">
+    <li class="active"><a data-toggle="tab" href="#home">Login</a></li>
+    <li><a data-toggle="tab" href="#menu1">Sign Up</a></li>
+  </ul>
+  
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+
+                          <!-- body -->
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+        
+      <p>
+        {{user|json}}
+    </p>
+      <form name="log"  #heroForm="ngForm">
+
+       <div class="form-group">
+          <label for="alterEgo">Email</label>
+          <input type="text"  class="form-control" #email="ngModel"  name="email" [(ngModel)]="user.email" id="id_email" placeholder="Enter Email" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+        </div>
+  
+        <div *ngIf="email.errors && (email.dirty || email.touched)"
+       class="alert alert-danger">
+       <div [hidden]="!email.errors.required">
+          Email is required
+        </div>
+       <div [hidden]="!email.errors.pattern">
+          Email format should contain number and character
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Password</label>
+        <input type="text" class="form-control" #pass="ngModel" name="pass" [(ngModel)]="user.pass"  id="id_name" placeholder="Enter pass" required>
+      </div>
+
+      <div *ngIf="pass.errors && (pass.dirty || pass.touched)"
+     class="alert alert-danger">
+     <div [hidden]="!pass.errors.required">
+        Password is required 
+      </div>
+      </div>
+        <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Save</button>
+            
+   </form>
+     </div>
+                            
+    </div>
+    <div id="menu1" class="tab-pane fade">
+     
+      <div class="modal-header">
+        <p>
+          {{user|json}}
+      </p>
+        <form name="log"  #heroForm="ngForm">
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" #name="ngModel" name="name" [(ngModel)]="user.name" id="id_name" placeholder="Enter Name" required>
+          </div>
+    
+          <div *ngIf="name.errors && (name.dirty || name.touched)"
+         class="alert alert-danger">
+         <div [hidden]="!name.errors.required">
+            Name is required 
+          </div>
+        </div>
+                           
+       
+          <div class="form-group">
+            <label for="alterEgo">Phone</label>
+            <input type="text"  class="form-control" #phone="ngModel"  name="phone" [(ngModel)]="user.phone" id="id_phone" placeholder="Enter Phone" required pattern="[0-9]*" maxlength="10" minlength="10">
+          </div>
+    
+          <div *ngIf="phone.errors && (phone.dirty || phone.touched)"
+         class="alert alert-danger">
+         <div [hidden]="!phone.errors.required">
+            Mobile is required 
+          </div>
+         <div [hidden]="!phone.errors.pattern">
+            Phone number should be only numbers
+          </div>
+          <div [hidden]="!phone.errors.maxlength">
+            Please Enter Atleast 10 Digit Number 
+          </div>
+          <div [hidden]="!phone.errors.minlength">
+            Please Enter Atleast 10 Digit Number 
+          </div>
+        
+        </div>
+        
+         <div class="form-group">
+            <label for="alterEgo">Email</label>
+            <input type="text"  class="form-control" #email="ngModel"  name="email" [(ngModel)]="user.email" id="id_email" placeholder="Enter Email" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+          </div>
+    
+          <div *ngIf="email.errors && (email.dirty || email.touched)"
+         class="alert alert-danger">
+         <div [hidden]="!email.errors.required">
+            Email is required
+          </div>
+         <div [hidden]="!email.errors.pattern">
+            Email format should be
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label for="name">Pass</label>
+          <input type="text" class="form-control" #pass="ngModel" name="pass" [(ngModel)]="user.pass"  id="id_name" placeholder="Enter pass" required>
+        </div>
+  
+        <div *ngIf="pass.errors && (pass.dirty || pass.touched)"
+       class="alert alert-danger">
+       <div [hidden]="!pass.errors.required">
+          pass is required 
+        </div>
+        </div>
+          <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Save</button>
+              
+     </form>
+       </div>
+      
+    </div>
+    
+    
+    </div>
+  </div>
+   </div>
+ </div>
+</div>
+
+<div class="container-fluid text-center holder">
+  <h2 style="color: #f4511e; font-weight: bold;">SERVICES</h2>
+  <marquee class="span">** VERY SORRY TO INFORM THAT ONLINE PAYMENT IS NOT AVAILABLE STILL NOW **</marquee>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-home  logo-small"></span>
+      <h4 class="head">LOCATION SELECT</h4>
+      <p class="span">Select location to get closest shop</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf  logo-small"></span>
+      <h4 class="head">FRESH VEGETABLE</h4>
+      <p class="span">We import fresh vesitable daily</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-shopping-cart logo-small"></span>
+      <h4 class="head">MAKE YOUR CART</h4>
+      <p class="span">you can make your cart of many products</p>
+    </div>
+    </div>
+    <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-plus  logo-small"></span>
+      <h4 class="head">HYGIENE</h4>
+      <p class="span">We maintain hygiene for healthy society</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-fire logo-small"></span>
+      <h4 class="head">FAST DELIVERY</h4>
+      <p class="span">We ensure delivery as early as possible</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench  logo-small"></span>
+      <h4 class="head">FEEBBACK</h4>
+      <p class="span">Give feedback for improvement..</p>
+    </div>
+  </div>
+</div>
+  

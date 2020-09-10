@@ -1,0 +1,123 @@
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 1.7rem;
+    background-color: white;
+  }
+  .navbar-brand{
+  
+    font-size: 3.5rem;
+    color:#0061f2;
+    font-weight: bold;
+  }
+  .navbar-nav li a:hover {
+    color: #1abc9c !important;
+  }
+  p{
+    font-size: 17px;
+  }
+  .container-fluid{
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  .bg-1{
+    
+    color: ghostwhite;
+    padding-top: 90px;
+    padding-bottom: 10px;
+    background: linear-gradient(
+      rgba(167, 177, 235, 0.849),
+      #0061f2),
+      url('src/assets/imgs/backg.jpg');
+      background-size: cover;
+      z-index: -1;
+
+  }
+  .bg-2
+  {
+    background-color:#f6f6f6;
+
+
+  }
+  .header{
+    margin-top: 50px;
+  }
+  .search-bar,.btn-teal{
+    margin-top: 20px;
+  }
+  svg {
+    overflow: hidden;
+    vertical-align: middle;
+  }
+  .terms-1{
+   color:aqua;
+  }
+  .terms-1:hover{
+    color:ghostwhite;
+   }
+  .btn{
+    border-radius: 15px;
+    overflow: hidden;
+    outline: none;
+  }
+  .btn-teal {
+    color: #fff;
+    background-color: #00ba94;
+    border-color: #00ba94;
+  }
+  .btn-teal:hover {
+    color: #fff;
+    background-color: #009476;
+    border-color: #00876b;
+  }
+  .btn-teal:focus, .btn-teal.focus {
+    color: #fff;
+    background-color: #009476;
+    border-color: #00876b;
+    box-shadow: 0 0 0 0.2rem rgba(38, 196, 164, 0.5);
+  }  
+  
+  .ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; /* green */
+  }
+  
+  .ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; /* red */
+  }
+  .holder 
+   {
+    background: white;
+        background-size: cover;
+        color:black;
+
+    }
+.logo-small {
+    color: #f4511e;
+    font-size: 50px;
+    opacity: .9;
+  }
+  
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+
+  .span{
+      opacity: 1;
+      position: relative;
+      font:bold;
+     color:black;
+     background: cover;
+     font-size:17px
+    
+  }
+
+  .head{
+      color: white;
+  }
+  
+  
+  
