@@ -1,0 +1,11 @@
+p{
+    font-size: 17px;
+}
+.container-fluid{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .header{
+    text-align: center;
+    color: black;
+}
